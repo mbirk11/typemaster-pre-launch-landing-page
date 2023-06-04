@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@1,500&family=Barlow:wght@400;700;800&family=Inter:wght@400;700&family=Lexend+Deca&family=Raleway:wght@400;700&family=Roboto+Serif:wght@400;700&display=swap');
+:root{
+    --primary-color: #162542;
+    --secondary-color: #7B8BAD;
+    --button-bg-color: #F16718;
+    --image-cover:rgba(241, 103, 24, 0.7);
+    --button-bg-light-color: #FF9B62;
+    --button-inactive-bg-color: #E8EFF2;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    font-family: 'Barlow', sans-serif;
+    color: var(--primary-color);
+    font-size: 15px;
+  
+}
+.btn {
+    color: inherit;
+    border: none;
+    border-radius: 8px;
+    font-weight: 800;
+    padding: 12px;
+    text-transform: uppercase;
+    background-color: var(--button-bg-color);
+    color: white;
+}
+.btn:active{
+    background-color: var(--button-bg-light-color);
+    color: #E8EFF2;
+    cursor:pointer;
+ }
+.btn-secondary{
+    background-color: var(--button-inactive-bg-color);
+    color: var(--primary-color);
+}
+.btn-secondary:active{
+    background-color: var(--primary-color);
+    color: aliceblue;
+    cursor: pointer;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    padding: 27px;
+}
+.typemaster{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 64px;
+    padding: 24px;
+}
+.typemaster-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 32px;
+}
+.typemaster-text h1{
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: 900;
+}
+ p{
+    font-size: 16px;
+    color: var(--secondary-color);
+    line-height: 26px;
+}
+.preorder{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.preorder h4{
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+}
+.first-img{
+    background: url(assets/mobile/image-keyboard.jpg);
+    height: 331px;
+    width: 100%;
+    background-size: cover;
+    margin: 0 0 24px 24px;
+    border-radius: 8px;
+}
+.second-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.img{
+    display: flex;
+    justify-content:flex-start;
+    height: 193px;
+    width: 100%;
+    
+   
+}
+.img-one{
+    background-image: linear-gradient( var(--image-cover), var(--image-cover)),
+    url(assets/mobile/image-phone-and-keyboard.jpg);
+    background-size: cover;
+    width: 20%;
+    border-radius: 5px;
+    margin-right: 20px;
+    padding-left: 0%;
+}
+.img-two{
+    background-image: url(assets/mobile/image-glass-and-keyboard.jpg);
+    background-size:cover;
+    width: 70%;
+    border-radius: 5px;
+}
+.second-section-text{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    gap: 20px;
+    padding: 24px;
+}
+.second-section-text h2{
+    font-size: 32px;
+    line-height: 36px;
+}
+.third-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding: 24px; 
+}
+.third-section h3{
+    font-size: 24px ;
+    font-weight: 900;
+    line-height: 28px;
+   }
+.third-section img{
+ height: auto;
+ display: block;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding: 20px;
+}
+.third-section-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #F16718;
+    border-radius: 5px; 
+}
+.box h3{
+    font-size: 20px;}
+
+.footer{
+    color: var(--secondary-color);
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}    
+@media screen and (min-width:768px) {
+    body{
+        padding: 20px;
+    }
+    .typemaster-section{
+        display: flex;
+        flex-direction: row;
+    }
+    .first-img{
+        background: url(assets/tablet/image-keyboard.jpg);
+        background-size: cover;
+        height: 425px;
+        width: 100%;
+    }
+    .second-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .img{
+     justify-content: space-between;
+     height: 480px;
+    }
+   .img-one{
+    background-image: linear-gradient( var(--image-cover), var(--image-cover)),
+    url(assets/tablet/image-phone-and-keyboard.jpg);
+    background-size: cover;
+   }
+   .img-two{
+    background-image: url(assets/tablet/image-glass-and-keyboard.jpg);
+   }
+.second-section-text{
+ 
+    flex-wrap: nowrap;
+    align-items: center;
+}
+   .third-section{
+    display: flex;
+    flex-direction: row;
+   }
+ .box {
+    
+    width: 280px;
+}
+}
+@media (min-width:1000px){ 
+    body{
+        height: 100vh;
+        padding: 0;
+    }
+    .first-img{
+        background-image: url(assets/desktop/image-keyboard.jpg);
+        background-size: cover;
+        width: 100%;
+        height: 550px;
+    }
+ .desktop-bg{
+    display: block;
+    background-color:#E8EFF2;
+    border-radius: 8px;
+    width:135px;
+    height:240px;
+ }
+ .preorder{
+    width: 70%;
+ }
+ .typemaster-text{
+    display: flex;
+    flex-direction:column;
+    height: 80%;
+    width: 70%;
+ }
+ .typemaster-section{
+    gap:20px;
+ }
+ .second-section{
+    flex-direction: row;
+ }
+ .img{
+    height: 480px;
+    gap: 20px;
+ }
+ .img-one{
+    background-image: linear-gradient( var(--image-cover), var(--image-cover)),url(assets/desktop/image-phone-and-keyboard.jpg);
+    background-size: cover;
+    width: 30%;
+ }
+ .img-two{
+    background-image: url(assets/desktop/image-glass-and-keyboard.jpg);
+ }
+ .second-section-text{
+    align-self: center;
+    flex-direction: column;
+    width: 30%;
+ }
+ .third-section{
+    flex-wrap: nowrap;
+    gap: 30px;
+    padding-top: 60px;
+ }
+ .img :nth-child(1){
+    align-self: flex-end;
+ }
+ .typemaster-section :nth-child(3){
+    align-self: flex-start;
+ }
+
+}
